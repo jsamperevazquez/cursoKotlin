@@ -1,5 +1,5 @@
 fun main(args: Array<String>) {
-
+/*
     val numero=10   // Tipo val no se puede reasignar (final)
 
     var numero2 =20 // var se puede modificar o reasignar
@@ -27,7 +27,13 @@ fun main(args: Array<String>) {
         nombre: $nombre
         edad: $edad annos
     """.trimIndent())
+*/
+    Funciones().mostrarMensaje("Realizado en kotlin")
+    Funciones().ejemploParametros("Hola",2)
+    println(Funciones().ejemplo())
+    println(Funciones().calcularImpuestos(1500.00, 16.00))
+    // Si no se envía valor en el argumento de la función coge el valor predeter, si se envía no.
+    println(Funciones().ejemploPred())
 
-
-
+    println(Funciones().calcularIva(producto = 289.00))
 }
