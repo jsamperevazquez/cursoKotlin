@@ -1,3 +1,5 @@
+import casaCambio.TasaCambio
+
 fun main(args: Array<String>) {
 /*
     val numero=10   // Tipo val no se puede reasignar (final)
@@ -27,7 +29,7 @@ fun main(args: Array<String>) {
         nombre: $nombre
         edad: $edad annos
     """.trimIndent())
-*/
+
     Funciones().mostrarMensaje("Realizado en kotlin")
     Funciones().ejemploParametros("Hola",2)
     println(Funciones().ejemplo())
@@ -36,4 +38,8 @@ fun main(args: Array<String>) {
     println(Funciones().ejemploPred())
 
     println(Funciones().calcularIva(producto = 289.00))
-}
+
+ */
+
+        TasaCambio().calcularCambio()
+    }
