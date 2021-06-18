@@ -1,4 +1,7 @@
 import casaCambio.TasaCambio
+import ejerciciosIniciales.Ejercicio1
+import ejerciciosIniciales.Ejercicio2
+import ejerciciosIniciales.Ejercicio3
 
 fun main(args: Array<String>) {
 /*
@@ -41,5 +44,12 @@ fun main(args: Array<String>) {
 
  */
 
-        TasaCambio().calcularCambio()
-    }
+      //  TasaCambio().calcularCambio()
+    // Ejercicio1().solicitarDatos()
+    // Ejercicio2().calcularNeto()
+
+    Ejercicio3().pedirDatos()
+    Ejercicio3().calcularArea()
+    Ejercicio3().calcularPerimetro()
+    Ejercicio3().visualizarDatos()
+}
