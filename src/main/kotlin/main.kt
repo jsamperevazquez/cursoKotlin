@@ -2,6 +2,7 @@ import casaCambio.TasaCambio
 import ejerciciosIniciales.Ejercicio1
 import ejerciciosIniciales.Ejercicio2
 import ejerciciosIniciales.Ejercicio3
+import expresionWhen.When
 
 fun main(args: Array<String>) {
 /*
@@ -48,8 +49,18 @@ fun main(args: Array<String>) {
     // Ejercicio1().solicitarDatos()
     // Ejercicio2().calcularNeto()
 
+    /*
     Ejercicio3().pedirDatos()
     Ejercicio3().calcularArea()
     Ejercicio3().calcularPerimetro()
     Ejercicio3().visualizarDatos()
+
+     */
+
+    //  When().usarWhen()
+     // When().comprobarCombustible()
+    // When().otraManeraWhen()
+    // When().whenEnRango()
+    // When().whenEnVariable()
+    When().comprobarTipoDato()
 }
