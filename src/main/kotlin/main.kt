@@ -1,8 +1,4 @@
-import casaCambio.TasaCambio
-import ejerciciosIniciales.Ejercicio1
-import ejerciciosIniciales.Ejercicio2
-import ejerciciosIniciales.Ejercicio3
-import expresionWhen.When
+import cicloFor.For
 
 fun main(args: Array<String>) {
 /*
@@ -62,5 +58,9 @@ fun main(args: Array<String>) {
     // When().otraManeraWhen()
     // When().whenEnRango()
     // When().whenEnVariable()
-    When().comprobarTipoDato()
+    // When().comprobarTipoDato()
+    // For().forRango()
+    // For().forArray()
+    For().forDosEnDos(For().forArray())
+
 }
