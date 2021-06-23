@@ -1,5 +1,7 @@
 import arrayList.ArrayListOf
 import cicloFor.For
+import whileDoWhile.DoWhile
+import whileDoWhile.While
 
 fun main(args: Array<String>) {
 /*
@@ -63,6 +65,7 @@ fun main(args: Array<String>) {
     // For().forRango()
     // For().forArray()
     // For().forDosEnDos(For().forArray())
-    ArrayListOf().crearArrayListOf()
-
+    // ArrayListOf().crearArrayListOf()
+    // While().pedirEmpleados()
+    DoWhile().pedirNombres()
 }
