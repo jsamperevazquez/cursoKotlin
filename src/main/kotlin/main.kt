@@ -1,3 +1,4 @@
+import arrayList.ArrayListOf
 import cicloFor.For
 
 fun main(args: Array<String>) {
@@ -61,6 +62,7 @@ fun main(args: Array<String>) {
     // When().comprobarTipoDato()
     // For().forRango()
     // For().forArray()
-    For().forDosEnDos(For().forArray())
+    // For().forDosEnDos(For().forArray())
+    ArrayListOf().crearArrayListOf()
 
 }
