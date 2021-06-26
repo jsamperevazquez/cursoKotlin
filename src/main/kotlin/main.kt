@@ -1,5 +1,8 @@
 import arrayList.ArrayListOf
 import cicloFor.For
+import ejerciciosIniciales.Ejercicio4
+import ejerciciosIniciales.Ejercicio5
+import ejerciciosIniciales.Ejercicio6
 import whileDoWhile.DoWhile
 import whileDoWhile.While
 
@@ -67,5 +70,11 @@ fun main(args: Array<String>) {
     // For().forDosEnDos(For().forArray())
     // ArrayListOf().crearArrayListOf()
     // While().pedirEmpleados()
-    DoWhile().pedirNombres()
+    // DoWhile().pedirNombres()
+    // Ejercicio4().calcularPrecioTrayecto()
+    Ejercicio5().calcularPromedio()
+    Ejercicio5().calificacionMasAlta()
+    Ejercicio5().calificacionMasBaja()
+    Ejercicio5().alumnosReprobados()
+    Ejercicio6().sumarListaNumeros()
 }
