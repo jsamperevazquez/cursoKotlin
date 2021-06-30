@@ -3,6 +3,8 @@ import cicloFor.For
 import ejerciciosIniciales.Ejercicio4
 import ejerciciosIniciales.Ejercicio5
 import ejerciciosIniciales.Ejercicio6
+import excepciones.Throw
+import excepciones.TryCatch
 import whileDoWhile.DoWhile
 import whileDoWhile.While
 
@@ -72,9 +74,15 @@ fun main(args: Array<String>) {
     // While().pedirEmpleados()
     // DoWhile().pedirNombres()
     // Ejercicio4().calcularPrecioTrayecto()
-    Ejercicio5().calcularPromedio()
+   /* Ejercicio5().calcularPromedio()
     Ejercicio5().calificacionMasAlta()
     Ejercicio5().calificacionMasBaja()
     Ejercicio5().alumnosReprobados()
     Ejercicio6().sumarListaNumeros()
+
+    */
+    //TryCatch().capturarExcpcion()
+    // TryCatch().capturarExcepcionDesdeArchivo()
+    // TryCatch().esNumero("4")
+    println(Throw().calcularInteresPrestamo(readLine()!!.toDouble()))
 }
