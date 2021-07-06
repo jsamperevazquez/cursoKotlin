@@ -3,6 +3,7 @@ import cicloFor.For
 import ejerciciosIniciales.Ejercicio4
 import ejerciciosIniciales.Ejercicio5
 import ejerciciosIniciales.Ejercicio6
+import ejerciciosIniciales.Ejercicio7
 import excepciones.Throw
 import excepciones.TryCatch
 import nullSafety.Nulos
@@ -86,9 +87,10 @@ fun main(args: Array<String>) {
     // TryCatch().capturarExcepcionDesdeArchivo()
     // TryCatch().esNumero("4")
     // println(Throw().calcularInteresPrestamo(readLine()!!.toDouble()))
-    Nulos().calcularAreaCuadrado()
+   /* Nulos().calcularAreaCuadrado()
     Nulos().calcularAreaCuadradoConElvis()
     Nulos().calcularAreaCuadradoOtraOpcion()
     Nulos().calcularAreaCuadradoLLamadaSegura()
-
+    */
+    Ejercicio7().calcularDonas()
 }
