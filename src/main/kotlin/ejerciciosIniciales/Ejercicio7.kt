@@ -1,8 +1,5 @@
 package ejerciciosIniciales
 
-import java.lang.NumberFormatException
-import kotlin.Exception
-
 class Ejercicio7 {
     fun calcularDonas() {
 
