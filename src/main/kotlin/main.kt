@@ -1,3 +1,4 @@
+import CompanionObjectYConstantes.Nota
 import arrayList.ArrayListOf
 import cicloFor.For
 import ejerciciosIniciales.Ejercicio4
@@ -92,5 +93,10 @@ fun main(args: Array<String>) {
     Nulos().calcularAreaCuadradoOtraOpcion()
     Nulos().calcularAreaCuadradoLLamadaSegura()
     */
-    Ejercicio7().calcularDonas()
+    // Ejercicio7().calcularDonas()
+    println(Nota.numeroInstancias) // antes de crear la instancia nota
+    val nota1 = Nota("primera", "Esta es la primera nota")
+    Nota("segundanotamayordiezcaracteres", "Esta es la segunda nota")
+    println(Nota.numeroInstancias) // después de crear las instancias
+    Nota.mostrarNumeroInstancias()
 }
