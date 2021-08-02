@@ -6,6 +6,9 @@ import ejerciciosIniciales.Ejercicio6
 import ejerciciosIniciales.Ejercicio7
 import excepciones.Throw
 import excepciones.TryCatch
+import herencia.Empleado
+import herencia.Operario
+import herencia.Persona
 import nullSafety.Nulos
 import whileDoWhile.DoWhile
 import whileDoWhile.While
@@ -92,5 +95,14 @@ fun main(args: Array<String>) {
     Nulos().calcularAreaCuadradoOtraOpcion()
     Nulos().calcularAreaCuadradoLLamadaSegura()
     */
-    Ejercicio7().calcularDonas()
+    // Ejercicio7().calcularDonas()
+    val persona1 = Persona("Angel", "Lopez", "Garcia Barbon 45", "647797865" , "17/03/1989")
+    println(persona1.obtenerEdad()) // obtener edad actual de la persona
+    println(persona1)
+    val empleado1 = Empleado("Juan","Martinez","Portanet 32",null,"12/09/1991",1850.0)
+    println(empleado1.obtenerEdad())
+    println(empleado1)
+    val operario1 = Operario("Marcos", "Martinez", "Orense 13","986452432", "30/11/1981",2000.0 , "Oficial")
+    println(operario1.obtenerEdad())
+    println(operario1)
 }
