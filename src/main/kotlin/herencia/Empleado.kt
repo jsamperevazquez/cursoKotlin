@@ -9,6 +9,7 @@ open class Empleado(
     var salario: Double
 ) : Persona(nombre, apellidos, direccion, telefono, fechaNacimientoTexto) {
 
+
     override fun toString(): String {
         return super.toString() + "\nSalario : $salario"
     }

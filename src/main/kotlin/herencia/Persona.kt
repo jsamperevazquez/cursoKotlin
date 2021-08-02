@@ -17,6 +17,7 @@ open class Persona(
         return Period.between(fechaNacimiento, LocalDate.now()).years  // Calcula la diferencia entre dos fechas (En Años (years) )
     }
 
+
     // Metodo de sobreescritura para ver valores de un objeto
     override fun toString(): String {
         return  "Nombre: $nombre\n" +

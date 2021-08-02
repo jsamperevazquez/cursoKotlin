@@ -10,6 +10,7 @@ class Operario(
     var categoria: String
 ) : Empleado(nombre, apellidos, direccion, telefono, fechaNacimientoTexto, salario) {
 
+
     override fun toString(): String {
         return super.toString() + "\nCateforía del operario: $categoria"
     }
