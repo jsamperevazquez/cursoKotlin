@@ -1,5 +1,6 @@
 import arrayList.ArrayListOf
 import cicloFor.For
+import clasesAbstractas.Rectangulo
 import ejerciciosIniciales.Ejercicio4
 import ejerciciosIniciales.Ejercicio5
 import ejerciciosIniciales.Ejercicio6
@@ -9,6 +10,7 @@ import excepciones.TryCatch
 import herencia.Empleado
 import herencia.Operario
 import herencia.Persona
+import interfaces.Cuadrado
 import nullSafety.Nulos
 import whileDoWhile.DoWhile
 import whileDoWhile.While
@@ -96,6 +98,7 @@ fun main(args: Array<String>) {
     Nulos().calcularAreaCuadradoLLamadaSegura()
     */
     // Ejercicio7().calcularDonas()
+    /*
     val persona1 = Persona("Angel", "Lopez", "Garcia Barbon 45", "647797865" , "17/03/1989")
     println(persona1.obtenerEdad()) // obtener edad actual de la persona
     println(persona1)
@@ -105,4 +108,20 @@ fun main(args: Array<String>) {
     val operario1 = Operario("Marcos", "Martinez", "Orense 13","986452432", "30/11/1981",2000.0 , "Oficial")
     println(operario1.obtenerEdad())
     println(operario1)
+
+     */
+    /*
+    var rectangulo = Rectangulo(10.0, 5.0,"Rectangulo 1")
+    println(rectangulo.obtenerArea())
+    println(rectangulo.obtenerPerimetro())
+    println(rectangulo.obtenerAreaPulgadas())
+    println(rectangulo.obtenerPerimetroPulgadas())
+    rectangulo.dibujar()
+
+     */
+    var cuadrado1 = Cuadrado(8.0,5.0,"cuadrado")
+    println(cuadrado1.obtenerArea())
+    println(cuadrado1.obtenerPerimetro())
+    cuadrado1.dibujar()
+
 }
