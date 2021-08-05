@@ -1,5 +1,6 @@
-import dataClass.Persona
-import dataClass.PersonaB
+import enumClasses.EstadoTarea
+import enumClasses.Tarea
+import enumClasses.Tarea2
 
 fun main(args: Array<String>) {
 /*
@@ -132,7 +133,36 @@ fun main(args: Array<String>) {
     println("$nombre,$telefono")
      */
 
+    //Enum classes es una clase especial para enumerar constantes y limitar creación de objetos:
+    // - Con una clase normal (Vemos que estado está una con MAY y otra min, con lo cual si no se trata no la tiene en cuenta):
+    val listaTareas = arrayListOf(Tarea("Lavar ropa", "Pendiente"), Tarea("Comprar medicamentos", "pendiente"))
 
-
-
+    var tareasPendientes = 0
+    listaTareas.forEach {
+        if (it.estado.equals("Pendiente"))
+            tareasPendientes++
+    }
+    println(
+        """
+        Tareas pendientes de realizar= $tareasPendientes
+    """.trimIndent()
+    )
+    // -Con una enum class:
+    val listaTareas2 = arrayListOf(
+        Tarea2("Comprar libros", EstadoTarea.PENDIENTE),
+        Tarea2("LLevar coche taller", EstadoTarea.EN_PROCESO)
+    )
+    listaTareas2.forEach {
+      when (it.estado){
+          EstadoTarea.PENDIENTE-> println("""
+              Tarea ${it.nombre} está pendiente
+          """.trimIndent())
+          EstadoTarea.EN_PROCESO -> println("""
+              Tarea ${it.nombre} está realizándose
+          """.trimIndent())
+          EstadoTarea.REALIZADA -> println("""
+              Tarea ${it.nombre} está terminada
+          """.trimIndent())
+      }
+    }
 }
