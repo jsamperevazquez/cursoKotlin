@@ -1,6 +1,8 @@
+import ejerciciosIniciales.Cuenta
 import enumClasses.EstadoTarea
 import enumClasses.Tarea
 import enumClasses.Tarea2
+import javax.swing.JOptionPane
 
 fun main(args: Array<String>) {
 /*
@@ -132,7 +134,7 @@ fun main(args: Array<String>) {
     val (nombre,telefono) = persona1
     println("$nombre,$telefono")
      */
-
+    /*
     //Enum classes es una clase especial para enumerar constantes y limitar creación de objetos:
     // - Con una clase normal (Vemos que estado está una con MAY y otra min, con lo cual si no se trata no la tiene en cuenta):
     val listaTareas = arrayListOf(Tarea("Lavar ropa", "Pendiente"), Tarea("Comprar medicamentos", "pendiente"))
@@ -165,4 +167,10 @@ fun main(args: Array<String>) {
           """.trimIndent())
       }
     }
+
+     */
+    var cuenta1 = Cuenta("01-8547-9","Alberto Palma", 5000.00)
+    cuenta1.menu()
+
+
 }
