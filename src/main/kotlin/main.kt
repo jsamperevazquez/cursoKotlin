@@ -1,8 +1,6 @@
-import ejerciciosIniciales.Cuenta
-import enumClasses.EstadoTarea
-import enumClasses.Tarea
-import enumClasses.Tarea2
-import javax.swing.JOptionPane
+import arrayList.ArrayListOf
+import ejerciciosIniciales.ultimoEjercicio.*
+import java.util.ArrayList
 
 fun main(args: Array<String>) {
 /*
@@ -169,8 +167,40 @@ fun main(args: Array<String>) {
     }
 
      */
-    var cuenta1 = Cuenta("01-8547-9","Alberto Palma", 5000.00)
-    cuenta1.menu()
+    /*
+     // Ejercicio de cuenta bancaria
+     var cuenta1 = Cuenta("01-8547-9","Alberto Palma", 5000.00)
+     cuenta1.menu()
 
+     */
+    val lavadora = Lavadora(
+        "SD5S84DRTR",
+        Electrodomesticos.tipoElectrodomestico.Lavadora,
+        Electrodomesticos.color.Blanco,
+        25.0F,
+        347.55,
+        18.0F
+    )
+    val micro1 = Microondas(
+        "AGS87DPSQR",
+        Electrodomesticos.tipoElectrodomestico.Microondas,
+        Electrodomesticos.color.Negro,
+        8.5F,
+        180.75,
+        1350.0F
+    )
+    val refrigerador1 = Refrigerador(
+        "SDP08756SR",
+        Electrodomesticos.tipoElectrodomestico.Refrigerador,
+        Electrodomesticos.color.Gris,
+        47.0F,
+        475.99,
+        10.0F,
+        0.0F,
+        -15.0F
+    )
+    var listaElectrodomesticos = arrayListOf(lavadora,micro1,refrigerador1)
+    listaElectrodomesticos.forEach { electro -> println(electro) }
+    Electrodomestico.mostrarFabricados()
 
 }
